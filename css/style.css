@@ -53,3 +53,26 @@ header {
     align-items: center;
     gap: 10px;
 }
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-image: url(../images/bakery.jpg);
+    background-size: cover;
+    background-position: top;
+    color: #6f4e37;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-content {
+    background-color: rgba(210, 180, 140, 0.8);
+    padding: 20px 30px;
+    border-radius: 12px;
+    display: 12px;
+    display: inline-block;
+}
