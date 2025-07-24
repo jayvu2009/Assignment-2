@@ -76,3 +76,38 @@ header {
     display: 12px;
     display: inline-block;
 }
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.read-more {
+    color: #ff6600;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
