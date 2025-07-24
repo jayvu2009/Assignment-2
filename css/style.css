@@ -111,3 +111,23 @@ header {
 .read-more:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: #e69a4e;
+    color: #DDD;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+}
+
+#contact p, #contact li {
+    display: inline-block;
+    width: 100px;
+}
+
+#contact li a {
+    color: white;
+    text-decoration: none;
+}
+
