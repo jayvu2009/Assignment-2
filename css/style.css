@@ -159,3 +159,15 @@ footer {
     text-decoration: none;
 }
 
+/* RESONSIVE */
+@media (max-width: 600px) {
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+}
