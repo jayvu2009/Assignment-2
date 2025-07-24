@@ -112,6 +112,34 @@ header {
     text-decoration: underline;
 }
 
+.post-container {
+    display: grid;
+    grid-template-areas: 
+     "header header"
+     "main sidebar"
+     "footer footer";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 2rem;
+}
+
+#post-header { grid-area: header;}
+#post-main { grid-area: main;}
+
+.post-sidebar {
+    grid-area: sidebar;
+    background-color: #b36e29;
+    color: white;
+    padding: 20px 30px;
+}
+
+.post-sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 footer {
     background-color: #e69a4e;
     color: #DDD;
