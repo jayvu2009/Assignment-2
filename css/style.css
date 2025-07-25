@@ -1,9 +1,11 @@
+/* Reset everything */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set font the whole body part */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
@@ -11,12 +13,14 @@ body {
     background-color: #fff;
 }
 
+/* Style navigation bar */
 .site-header {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: #b36e29;
     color: #fff;
+    /* Make the navigation bar always in top */
     z-index: 100;
 }
 
@@ -36,9 +40,11 @@ body {
 .nav-links a {
     color: white;
     text-decoration: none;
+    /* Make the na-links change when i click in */
     transition: color 0.3s ease;
 }
 
+/* Make the nav-link change to brown and have underline when i click in */
 .nav-links a:hover {
     color: brown;
     text-decoration: underline;
@@ -54,6 +60,7 @@ body {
     gap: 10px;
 }
 
+/* Style hero section */
 .hero {
     display: flex;
     align-items: center;
@@ -65,6 +72,7 @@ body {
     color: #6f4e37;
     text-align: center;
     font-weight: bold;
+    /* hidden the thing over the frame */
     overflow: hidden;
     position: relative;
 }
@@ -73,13 +81,14 @@ body {
     background-color: rgba(210, 180, 140, 0.8);
     padding: 20px 30px;
     border-radius: 12px;
-    display: 12px;
     display: inline-block;
 }
 
+/* Style card post to edit to have flexible edit on column and row */
 .posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* space between card */
     gap: 20px;
     padding: 2rem;
 }
@@ -89,10 +98,13 @@ body {
     padding: 1rem;
     border: 1px solid #DDD;
     border-radius: 5px;
+    /* make the card move a litte bit when i put the mouse in */
     transition: transform 0.3s ease;
 }
 
+/* make the card move a litte bit when i put the mouse in */
 .card:hover {
+    /* move in horizontal way */
     transform: translateY(-10px);
 }
 
@@ -105,10 +117,12 @@ body {
 .read-more {
     color: #ff6600;
     text-decoration: none;
+    /* appear underline on word when i click in */
     transition: text-decoration 0.3s ease;
 }
 
 .read-more:hover {
+    /* appear underline on word when i click in */
     text-decoration: underline;
 }
 
