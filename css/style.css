@@ -140,6 +140,13 @@ body {
     object-fit: cover;
 }
 
+#post-header h2 {
+    font-family: "Winky Rough", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
 footer {
     background-color: #e69a4e;
     color: #DDD;
