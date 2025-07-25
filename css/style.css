@@ -126,21 +126,29 @@ body {
     text-decoration: underline;
 }
 
+/* Styling post main content */
 .post-container {
     display: grid;
     grid-template-areas: 
-     "header header"
+     /* First row: header spans two columns*/
+     "header header" 
+     /* Second row: main content on left, sidebar on right */
      "main sidebar"
+     /* Third row: footer spans two columns */
      "footer footer";
+    /* Two columns: main take 2 parts, sidebar take 1 part */
     grid-template-columns: 2fr 1fr;
     gap: 20px;
     padding: 2rem;
 }
 
+/* Assign this element to the header area */
 #post-header { grid-area: header;}
+/* Assign this element to the main area */
 #post-main { grid-area: main;}
 
 .post-sidebar {
+    /* Assign this element to the sidebar area */
     grid-area: sidebar;
     background-color: #b36e29;
     color: white;
@@ -161,6 +169,7 @@ body {
     font-style: normal;
 }
 
+/* Footer */
 footer {
     background-color: #e69a4e;
     color: #DDD;
@@ -170,17 +179,20 @@ footer {
     bottom: 0;
 }
 
+/* Make the contact to the left to right instead of top to bottom */
 #contact p, #contact li {
     display: inline-block;
     width: 100px;
 }
 
+/* removing underline from the link */
 #contact li a {
     color: white;
     text-decoration: none;
 }
 
 /* RESONSIVE */
+/* edit the image can be change the layout on the other platform */
 @media (max-width: 600px) {
     .posts {
         grid-template-columns: 1fr 1fr;
