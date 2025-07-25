@@ -192,7 +192,7 @@ footer {
 }
 
 /* RESONSIVE */
-/* edit the image can be change the layout on the other platform */
+/* edit the image can be change the layout on the other devices */
 @media (max-width: 600px) {
     .posts {
         grid-template-columns: 1fr 1fr;
